@@ -2,11 +2,8 @@
 
 ### 前言
 
-Blog https://github.com/mhbseal/blog
-的react-native版,JS架构部分基本同web版。
- 
-
-线上下载地址：https://pan.baidu.com/s/1skP4nu9
+Blog https://github.com/mhbseal/blog 的react-native版,JS架构部分基本同web版。  
+APP线上下载地址：https://pan.baidu.com/s/1skP4nu9
 
 ### 准备
 
