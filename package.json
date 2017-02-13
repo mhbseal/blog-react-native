@@ -1,0 +1,19 @@
+{
+  "name": "blog-react-native",
+  "description": "Mo's Blog",
+  "version": "0.1.0",
+  "author": "Mu Haibao<mhbseal@163.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhbseal/blog-react-native"
+  },
+  "homepage": "https://github.com/mhbseal/blog-react-native",
+  "keywords": [
+    "react-native",
+    "redux",
+    "blog",
+    "ios",
+    "android"
+  ]
+}
