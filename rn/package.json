@@ -2,18 +2,19 @@
   "scripts": {
     "start": "react-native start",
     "ios": "react-native run-ios --project-path '../ios'",
-    "android": "react-native run-android --root '..'",
+    "android": "react-native run-android --root '..' --main-activity 'reactnative.ReactNativeActivity'",
     "emulator": "emulator -avd react-native -gpu on",
     "bundle:ios": "react-native bundle --entry-file ./index.ios.js --bundle-output ./dist/bundle.ios/index.ios.jsbundle --platform ios --assets-dest ./dist/bundle.ios --dev false",
     "bundle:android": "react-native bundle --entry-file ./index.android.js --bundle-output ../android/app/src/main/assets/bundle.android/index.android.jsbundle --platform android --assets-dest ../android/app/src/main/assets/bundle.android --dev false",
-    "remotedev": "remotedev --hostname=localhost --port=5678"
+    "remotedev": "remotedev --hostname=localhost --port=5678 --injectserver=reactnative",
+    "remotedev-revert": "remotedev --revert=reactnative",
+    "adb-reverse": "adb reverse tcp:5678 tcp:5678"
   },
   "dependencies": {
     "mo2js": "^0.2.4",
-    "npm": "^4.0.3",
-    "react": "^15.4.1",
-    "react-native": "^0.38.0",
-    "react-native-storage": "^0.1.4",
+    "react": "^15.4.2",
+    "react-native": "^0.41.2",
+    "react-native-storage": "^0.1.5",
     "react-native-vector-icons": "^3.0.0",
     "react-redux": "^4.4.6",
     "redux": "^3.6.0"

@@ -162,7 +162,7 @@ export default class Search extends Component {
       component: 'ArticleList',
       params
     });
-    // 测试原生和rn之间跳转-IOS
+    // // 测试原生和rn之间跳转-IOS
     // NativeModules.Navigator.push({
     //   component: 'IosNativeViewController',
     //   params

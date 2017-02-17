@@ -19,8 +19,7 @@ RCT_EXPORT_METHOD(push:(NSDictionary *)VC){
     dispatch_async(dispatch_get_main_queue(), ^{
         ReactNativeNavigationController *nv = (ReactNativeNavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
         
-        // 显示原生的状态栏和导航
-        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+        // 显示原生导航
         [nv setNavigationBarHidden:NO];
         
         // 参数挂在导航vc下
@@ -36,8 +35,7 @@ RCT_EXPORT_METHOD(pop){
     dispatch_async(dispatch_get_main_queue(), ^{
         ReactNativeNavigationController *nv = (ReactNativeNavigationController *)[UIApplication sharedApplication].keyWindow.rootViewController;
         
-        // 显示原生的状态栏和导航
-        [[UIApplication sharedApplication] setStatusBarHidden:NO];
+        // 显示原生导航
         [nv setNavigationBarHidden:NO];
         
         [nv popViewControllerAnimated:YES];

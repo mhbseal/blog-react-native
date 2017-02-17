@@ -25,9 +25,9 @@
     // 本地DEBUG
 //    jsCodeLocation = [NSURL URLWithString: @"http://localhost:8081/index.ios.bundle?platform=ios&dev=true"];
     // 真机or本地 DEBUG
-//    jsCodeLocation = [NSURL URLWithString: @"http://10.233.72.26:8081/index.ios.bundle?platform=ios&dev=true"];
+    jsCodeLocation = [NSURL URLWithString: @"http://10.233.72.26:8081/index.ios.bundle?platform=ios&dev=true"];
     // 打包离线
-    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"bundle.ios/index.ios" withExtension:@"jsbundle"];
+//    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"bundle.ios/index.ios" withExtension:@"jsbundle"];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                         moduleName:@"ReactNative"
                                                  initialProperties: nv.route ? @{@"route": nv.route} : nil                                                   launchOptions:nil];

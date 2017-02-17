@@ -26,7 +26,6 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if ([viewController isKindOfClass:[ReactNativeViewController class]]) {
-        [[UIApplication sharedApplication] setStatusBarHidden:YES];
         [super setNavigationBarHidden:YES];
     }
     [super pushViewController:viewController animated:animated];
@@ -34,7 +33,6 @@
 
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated{
     if ([super.viewControllers[super.viewControllers.count-2] isKindOfClass:[ReactNativeViewController class]]) {
-        [[UIApplication sharedApplication] setStatusBarHidden:YES];
         [super setNavigationBarHidden:YES];
     }
     [super popViewControllerAnimated:animated];
